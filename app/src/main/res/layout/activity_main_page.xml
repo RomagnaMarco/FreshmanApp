@@ -4,24 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sjsuapp.maryammostafavi.freshmanapp.MainPage">
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.sjsuapp.maryammostafavi.freshmanapp.MainPage"
+    tools:layout_editor_absoluteY="81dp">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="33dp"
-        android:layout_marginBottom="460dp"
+        android:id="@+id/textView"
+        android:layout_width="172dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="165dp"
+        android:layout_marginTop="77dp"
+        android:fontFamily="casual"
         android:text="WELCOME SPARTANS!"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="84dp" />
+        android:layout_width="78dp"
+        android:layout_height="103dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="31dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Tips"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="164dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="44dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Maps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_marginEnd="16dp"
+        tools:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="142dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Resources"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="108dp"
+
+        android:layout_height="74dp"
+
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="113dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Student Life"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button" />
 </android.support.constraint.ConstraintLayout>
